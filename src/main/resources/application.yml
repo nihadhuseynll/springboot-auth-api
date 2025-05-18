@@ -1,1 +1,20 @@
-spring.application.name=springboot-auth-api
+spring:
+  main:
+    allow-circular-references: true
+  application:
+    name: springboot-auth-api
+  datasource:
+    url: jdbc:postgresql://localhost:5434/Auth
+    username: Nihad
+    password: Nihad2258@.
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+  sql:
+    init:
+      mode: always
