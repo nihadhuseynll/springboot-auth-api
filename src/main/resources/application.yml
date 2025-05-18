@@ -1,8 +1,10 @@
 spring:
   main:
     allow-circular-references: true
+
   application:
     name: springboot-auth-api
+
   datasource:
     url: jdbc:postgresql://localhost:5434/Auth
     username: Nihad
@@ -15,6 +17,7 @@ spring:
     properties:
       hibernate:
         format_sql: true
+
   sql:
     init:
       mode: always
